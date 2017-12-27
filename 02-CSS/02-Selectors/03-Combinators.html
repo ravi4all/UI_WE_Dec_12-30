@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent > p,#parent .div_1 > p {
+            color: red;
+        }
+        #parent + h2 {
+            color: blue;
+        }
+        #parent ~ h2 {
+            color: blue;
+        }
+        #parent ~ .sib_1 h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minus modi voluptas nobis odit voluptatem id ab ea. Quaerat voluptas iure adipisci magnam aut quod blanditiis dolore qui maxime assumenda?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dicta dolore fuga itaque corrupti delectus quos velit officiis nesciunt dignissimos quam nisi! Ut a tempore vero atque, blanditiis ad quos?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolor eveniet obcaecati accusantium debitis, placeat tenetur sed dolore nostrum facilis fugiat adipisci reprehenderit. Obcaecati animi atque laudantium distinctio! Ipsam, laborum?
+        </p>
+        <div class="div_1">
+            <div class="div_2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error reiciendis explicabo repellendus delectus, vero provident amet nisi veniam? Itaque ut libero a ratione blanditiis ipsam ducimus exercitationem illum repellendus!
+                </p>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro nihil? Vitae illo sunt aliquam sed, accusantium deleniti cupiditate aspernatur quas quod, harum vero iste quos facere esse quae? Exercitationem.
+            </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt atque sed earum quis sequi vel? Obcaecati ad, fugit dolor eum, modi dignissimos cumque maiores qui similique ab reprehenderit. Error?
+        </p>
+    </div>
+<hr>
+    <h2>This heading is outside div</h2>
+
+    <h2>This heading is outside div</h2>
+
+    <h2>This heading is outside div</h2>
+
+    <div class="sib_1">
+        <h2>This heading is outside div</h2>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* body/h2/h3/div - Selector
+{} - Expression
+background-color - Property
+lightblue - value */
+
+body {
+    background-color: lightblue;
+}

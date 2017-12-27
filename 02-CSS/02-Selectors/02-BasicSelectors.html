@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent1, #parent2 {
+            background-color: lightblue;
+        }
+        #parent1 .child {
+            background-color: lightcoral;
+        }
+        #parent1 .child .grandchild {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Selectors</h1>
+
+    <div id="parent1">
+        <h2>This is inside Parent</h2>
+        <div class="child">
+            <h2>This is inside Child</h2>
+            <div class="grandchild">
+                <h2>This is inside grand child</h2>
+            </div>
+        </div>
+        <div class="child">
+            <h2>This is inside Child</h2>
+            <div class="grandchild">
+                <h2>This is inside grand child</h2>
+            </div>
+        </div>
+    </div>
+<hr>
+    <div id="parent2">
+            <h2>This is inside Parent</h2>
+            <div class="child">
+                <h2>This is inside Child</h2>
+                <div class="grandchild">
+                    <h2>This is inside grand child</h2>
+                </div>
+            </div>
+            <div class="child">
+                <h2>This is inside Child</h2>
+                <div class="grandchild">
+                    <h2>This is inside grand child</h2>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
