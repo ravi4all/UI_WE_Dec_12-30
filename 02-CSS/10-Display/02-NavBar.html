@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* a {
+            display: block;
+        } */
+        #navigation {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        /* total_margin = total - width
+        left_margin, right_margin = total_margin/2 */
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li {
+            display: inline-block;
+            margin: 0px 15px;
+            background-color: lightblue;
+            width: 10%;
+            text-align: center;
+            position: relative;
+        }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: red;
+            padding: 10px;
+        }
+        ul li a:hover {
+            background-color: lightgray; 
+        }
+        .dropdown {
+            position: absolute;
+            /* background-color: lightsalmon; */
+            width: 100%;
+            display: none;
+        }
+        .dropdown ul li {
+            display: block;
+            width: 100%;
+            margin: 0px;
+            background-color: lightsalmon;
+            border-bottom: 1px solid #fff;
+        }
+        ul li:hover .dropdown {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Property</h1>
+
+    <div id="navigation">
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Men</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">T-Shirt</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Jeans</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Sports</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
