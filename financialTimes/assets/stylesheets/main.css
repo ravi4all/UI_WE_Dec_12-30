@@ -175,8 +175,74 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Content */
 #content {
-
+    padding: 50px 0px;
 }
+#content .container {
+    width: 1000px;
+}
+
+#section_1 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc1b7;
+}
+#section_1 .div_1 {
+    width: 48%;
+}
+#section_1 .div_1 h2 {
+    font-size: 36px;
+}
+#section_1 .div_1 p, #section_1 .div_1 a {
+    color: #66605c;
+}
+#section_1 .div_1 ul {
+    border-left: 1px solid #66605c;
+}
+
+#section_1 .div_2 {
+    width: 48%;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+}
+#section_1 .div_2 img {
+    width: 70%;
+    margin-bottom: 20px;
+}
+#section_1 .div_2 .news_title .link_1 {
+    color: #990f3d;
+    font-weight: bold;
+}
+#section_1 .div_2 .analysis {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+#section_1 .div_2 .analysis::after {
+    content: "";
+    border: 3px solid #990f3d;
+    position: absolute;
+    bottom: 0px;
+    width: 20%;
+    left: 50%;
+    margin-left: -50px;
+}
+#section_1 .div_2 .news_title:after{
+    content: "";
+    background-color: #F2DFCE;
+    position: absolute;
+    bottom: 0px;
+    height: 70%;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+}
+
+#section_1 a {
+    color: #000;
+    text-decoration: none;
+}
+
 
 /* Footer */
 #footer {
